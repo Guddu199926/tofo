@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         MAIN_BRANCH = 'dev'
-        FEATURE_BRANCH = env.BRANCH_NAME
+        FEATURE_BRANCH = ${env.BRANCH_NAME}
         GITHUB_API_URL = 'https://api.github.com'
         REPO = 'Guddu199926/tofo' // Replace with your repo details
     }
